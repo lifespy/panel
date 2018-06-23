@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.not404.panel.domain.RelayDto" table="relay" schema="sspanel">
+        <id name="id" column="id"/>
+        <property name="userId" column="user_id"/>
+        <property name="sourceNodeId" column="source_node_id"/>
+        <property name="distNodeId" column="dist_node_id"/>
+        <property name="distIp" column="dist_ip"/>
+        <property name="port" column="port"/>
+        <property name="priority" column="priority"/>
+    </class>
+</hibernate-mapping>

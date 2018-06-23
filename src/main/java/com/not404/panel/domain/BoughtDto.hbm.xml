@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.not404.panel.domain.BoughtDto" table="bought" schema="sspanel">
+        <id name="id" column="id"/>
+        <property name="userid" column="userid"/>
+        <property name="shopid" column="shopid"/>
+        <property name="datetime" column="datetime"/>
+        <property name="renew" column="renew"/>
+        <property name="coupon" column="coupon"/>
+        <property name="price" column="price"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.not404.panel.domain.SsNodeDto" table="ss_node" schema="sspanel">
+        <id name="id" column="id"/>
+        <property name="name" column="name"/>
+        <property name="type" column="type"/>
+        <property name="server" column="server"/>
+        <property name="method" column="method"/>
+        <property name="info" column="info"/>
+        <property name="status" column="status"/>
+        <property name="sort" column="sort"/>
+        <property name="customMethod" column="custom_method"/>
+        <property name="trafficRate" column="traffic_rate"/>
+        <property name="nodeClass" column="node_class"/>
+        <property name="nodeSpeedlimit" column="node_speedlimit"/>
+        <property name="nodeConnector" column="node_connector"/>
+        <property name="nodeBandwidth" column="node_bandwidth"/>
+        <property name="nodeBandwidthLimit" column="node_bandwidth_limit"/>
+        <property name="bandwidthlimitResetday" column="bandwidthlimit_resetday"/>
+        <property name="nodeHeartbeat" column="node_heartbeat"/>
+        <property name="nodeIp" column="node_ip"/>
+        <property name="nodeGroup" column="node_group"/>
+        <property name="customRss" column="custom_rss"/>
+        <property name="muOnly" column="mu_only"/>
+    </class>
+</hibernate-mapping>

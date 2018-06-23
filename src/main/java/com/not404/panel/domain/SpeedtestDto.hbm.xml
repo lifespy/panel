@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.not404.panel.domain.SpeedtestDto" table="speedtest" schema="sspanel">
+        <id name="id" column="id"/>
+        <property name="nodeid" column="nodeid"/>
+        <property name="datetime" column="datetime"/>
+        <property name="telecomping" column="telecomping"/>
+        <property name="telecomeupload" column="telecomeupload"/>
+        <property name="telecomedownload" column="telecomedownload"/>
+        <property name="unicomping" column="unicomping"/>
+        <property name="unicomupload" column="unicomupload"/>
+        <property name="unicomdownload" column="unicomdownload"/>
+        <property name="cmccping" column="cmccping"/>
+        <property name="cmccupload" column="cmccupload"/>
+        <property name="cmccdownload" column="cmccdownload"/>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.not404.panel.domain.UserDto" table="user" schema="sspanel">
+        <id name="id" column="id"/>
+        <property name="userName" column="user_name"/>
+        <property name="email" column="email"/>
+        <property name="pass" column="pass"/>
+        <property name="passwd" column="passwd"/>
+        <property name="t" column="t"/>
+        <property name="u" column="u"/>
+        <property name="d" column="d"/>
+        <property name="plan" column="plan"/>
+        <property name="transferEnable" column="transfer_enable"/>
+        <property name="port" column="port"/>
+        <property name="canSwitch" column="switch"/>
+        <property name="enable" column="enable"/>
+        <property name="type" column="type"/>
+        <property name="lastGetGiftTime" column="last_get_gift_time"/>
+        <property name="lastCheckInTime" column="last_check_in_time"/>
+        <property name="lastRestPassTime" column="last_rest_pass_time"/>
+        <property name="regDate" column="reg_date"/>
+        <property name="inviteNum" column="invite_num"/>
+        <property name="money" column="money"/>
+        <property name="refBy" column="ref_by"/>
+        <property name="expireTime" column="expire_time"/>
+        <property name="method" column="method"/>
+        <property name="isEmailVerify" column="is_email_verify"/>
+        <property name="regIp" column="reg_ip"/>
+        <property name="nodeSpeedlimit" column="node_speedlimit"/>
+        <property name="nodeConnector" column="node_connector"/>
+        <property name="isAdmin" column="is_admin"/>
+        <property name="imType" column="im_type"/>
+        <property name="imValue" column="im_value"/>
+        <property name="lastDayT" column="last_day_t"/>
+        <property name="sendDailyMail" column="sendDailyMail"/>
+        <property name="clazz" column="class"/>
+        <property name="classExpire" column="class_expire"/>
+        <property name="expireIn" column="expire_in"/>
+        <property name="theme" column="theme"/>
+        <property name="gaToken" column="ga_token"/>
+        <property name="gaEnable" column="ga_enable"/>
+        <property name="pac" column="pac"/>
+        <property name="remark" column="remark"/>
+        <property name="nodeGroup" column="node_group"/>
+        <property name="autoResetDay" column="auto_reset_day"/>
+        <property name="autoResetBandwidth" column="auto_reset_bandwidth"/>
+        <property name="protocol" column="protocol"/>
+        <property name="protocolParam" column="protocol_param"/>
+        <property name="obfs" column="obfs"/>
+        <property name="obfsParam" column="obfs_param"/>
+        <property name="forbiddenIp" column="forbidden_ip"/>
+        <property name="forbiddenPort" column="forbidden_port"/>
+        <property name="disconnectIp" column="disconnect_ip"/>
+        <property name="isHide" column="is_hide"/>
+        <property name="isMultiUser" column="is_multi_user"/>
+        <property name="telegramId" column="telegram_id"/>
+    </class>
+</hibernate-mapping>
