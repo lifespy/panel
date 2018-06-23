@@ -8,7 +8,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "user", schema = "sspanel", catalog = "")
 public class UserDto {
-    private int id;
+    private long id;
     private String userName;
     private String email;
     private String pass;
@@ -64,11 +64,11 @@ public class UserDto {
 
     @Id
     @Column(name = "id")
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -656,5 +656,64 @@ public class UserDto {
     public int hashCode() {
 
         return Objects.hash(id, userName, email, pass, passwd, t, u, d, plan, transferEnable, port, canSwitch, enable, type, lastGetGiftTime, lastCheckInTime, lastRestPassTime, regDate, inviteNum, money, refBy, expireTime, method, isEmailVerify, regIp, nodeSpeedlimit, nodeConnector, isAdmin, imType, imValue, lastDayT, sendDailyMail, clazz, classExpire, expireIn, theme, gaToken, gaEnable, pac, remark, nodeGroup, autoResetDay, autoResetBandwidth, protocol, protocolParam, obfs, obfsParam, forbiddenIp, forbiddenPort, disconnectIp, isHide, isMultiUser, telegramId);
+    }
+
+    @Override
+    public String toString() {
+        return "UserDto{" +
+                "id=" + id +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", pass='" + pass + '\'' +
+                ", passwd='" + passwd + '\'' +
+                ", t=" + t +
+                ", u=" + u +
+                ", d=" + d +
+                ", plan='" + plan + '\'' +
+                ", transferEnable=" + transferEnable +
+                ", port=" + port +
+                ", canSwitch=" + canSwitch +
+                ", enable=" + enable +
+                ", type=" + type +
+                ", lastGetGiftTime=" + lastGetGiftTime +
+                ", lastCheckInTime=" + lastCheckInTime +
+                ", lastRestPassTime=" + lastRestPassTime +
+                ", regDate=" + regDate +
+                ", inviteNum=" + inviteNum +
+                ", money=" + money +
+                ", refBy=" + refBy +
+                ", expireTime=" + expireTime +
+                ", method='" + method + '\'' +
+                ", isEmailVerify=" + isEmailVerify +
+                ", regIp='" + regIp + '\'' +
+                ", nodeSpeedlimit=" + nodeSpeedlimit +
+                ", nodeConnector=" + nodeConnector +
+                ", isAdmin=" + isAdmin +
+                ", imType=" + imType +
+                ", imValue='" + imValue + '\'' +
+                ", lastDayT=" + lastDayT +
+                ", sendDailyMail=" + sendDailyMail +
+                ", clazz=" + clazz +
+                ", classExpire=" + classExpire +
+                ", expireIn=" + expireIn +
+                ", theme='" + theme + '\'' +
+                ", gaToken='" + gaToken + '\'' +
+                ", gaEnable=" + gaEnable +
+                ", pac='" + pac + '\'' +
+                ", remark='" + remark + '\'' +
+                ", nodeGroup=" + nodeGroup +
+                ", autoResetDay=" + autoResetDay +
+                ", autoResetBandwidth=" + autoResetBandwidth +
+                ", protocol='" + protocol + '\'' +
+                ", protocolParam='" + protocolParam + '\'' +
+                ", obfs='" + obfs + '\'' +
+                ", obfsParam='" + obfsParam + '\'' +
+                ", forbiddenIp='" + forbiddenIp + '\'' +
+                ", forbiddenPort='" + forbiddenPort + '\'' +
+                ", disconnectIp='" + disconnectIp + '\'' +
+                ", isHide=" + isHide +
+                ", isMultiUser=" + isMultiUser +
+                ", telegramId=" + telegramId +
+                '}';
     }
 }

@@ -5,9 +5,11 @@
 <hibernate-mapping>
 
     <class name="com.not404.panel.domain.UserDto" table="user" schema="sspanel">
-        <id name="id" column="id"/>
+        <id name="id" column="id" type="java.lang.Long"/>
         <property name="userName" column="user_name"/>
-        <property name="email" column="email"/>
+        <property name="email" column="email">
+            <column name="email" unique="true"/>
+        </property>
         <property name="pass" column="pass"/>
         <property name="passwd" column="passwd"/>
         <property name="t" column="t"/>
